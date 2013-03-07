@@ -10,9 +10,9 @@
  * @author Robin Monks <devlinks@gmail.com>
  */
 
-if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+if ( file_exists( dirname( __FILE__ ) . '/bitly-config.php' ) ) {
     
-    include( dirname( __FILE__ ) . '/local-config.php' );
+    include( dirname( __FILE__ ) . '/bitly-config.php' );
  
 } else {
 
