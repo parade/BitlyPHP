@@ -10,40 +10,54 @@
  * @author Robin Monks <devlinks@gmail.com>
  */
 
-/**
- * The bitlyKey assigned to your bit.ly account. (http://bit.ly/a/account)
- */
-define('bitlyKey', 'YOUR_BITLY_ASSIGNED_KEY');
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    
+    include( dirname( __FILE__ ) . '/local-config.php' );
+ 
+} else {
 
-/**
- * The bitlyLogin assigned to your bit.ly account. (http://bit.ly/a/account)
- */
-define('bitlyLogin' , 'YOUR_BITLY_LOGIN');
+	/* Bitly Config */
 
-/**
- * The client_id assigned to your OAuth app. (http://bit.ly/a/account)
- */
-define('bitly_clientid' , 'YOUR_BITLY_ASSIGNED_CLIENT_ID_FOR_OAUTH');
+	/**
+	 * The bitlyKey assigned to your bit.ly account. (http://bit.ly/a/account)
+	 */
+	define('bitlyKey', 'R_d5a0a1a38b67f039c4c0b3cefa0605f7');
 
-/**
- * The client_secret assigned to your OAuth app. (http://bit.ly/a/account)
- */
-define('bitly_secret' , 'YOUR_BITLY_ASSIGNED_CLIENT_SECRET_FOR_OAUTH');
+	/**
+	 * The bitlyLogin assigned to your bit.ly account. (http://bit.ly/a/account)
+	 */
+	define('bitlyLogin' , 'o_l41k2slah');
 
-/**
- * The URI of the standard bitly v3 API.
- */
-define('bitly_api', 'http://api.bit.ly/v3/');
+	/**
+	 * The client_id assigned to your OAuth app. (http://bit.ly/a/account)
+	 */
+	define('bitly_clientid' , 'YOUR_BITLY_ASSIGNED_CLIENT_ID_FOR_OAUTH');
 
-/**
- * The URI of the bitly OAuth endpoints.
- */
-define('bitly_oauth_api', 'https://api-ssl.bit.ly/v3/');
+	/**
+	 * The client_secret assigned to your OAuth app. (http://bit.ly/a/account)
+	 */
+	define('bitly_secret' , 'YOUR_BITLY_ASSIGNED_CLIENT_SECRET_FOR_OAUTH');
 
-/**
- * The URI for OAuth access token requests.
- */
-define('bitly_oauth_access_token', 'https://api-ssl.bit.ly/oauth/');
+	/**
+	 * The URI of the standard bitly v3 API.
+	 */
+	define('bitly_api', 'http://api.bit.ly/v3/');
+
+	/**
+	 * The URI of the bitly OAuth endpoints.
+	 */
+	define('bitly_oauth_api', 'https://api-ssl.bit.ly/v3/');
+
+	/**
+	 * The URI for OAuth access token requests.
+	 */
+	define('bitly_oauth_access_token', 'https://api-ssl.bit.ly/oauth/');
+
+
+	/* End Bitly Config */
+
+}
+
 
 /**
  * Given a longUrl, get the bit.ly shortened version.
