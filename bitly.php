@@ -16,17 +16,17 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
  
 } else {
 
-	/* Bitly Config */
+	/* Default Config */
 
 	/**
 	 * The bitlyKey assigned to your bit.ly account. (http://bit.ly/a/account)
 	 */
-	define('bitlyKey', 'R_d5a0a1a38b67f039c4c0b3cefa0605f7');
+	define('bitlyKey', 'YOUR_BITLY_ASSIGNED_KEY');
 
 	/**
 	 * The bitlyLogin assigned to your bit.ly account. (http://bit.ly/a/account)
 	 */
-	define('bitlyLogin' , 'o_l41k2slah');
+	define('bitlyLogin' , 'YOUR_BITLY_LOGIN');
 
 	/**
 	 * The client_id assigned to your OAuth app. (http://bit.ly/a/account)
@@ -52,7 +52,6 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	 * The URI for OAuth access token requests.
 	 */
 	define('bitly_oauth_access_token', 'https://api-ssl.bit.ly/oauth/');
-
 
 	/* End Bitly Config */
 
